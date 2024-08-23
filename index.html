@@ -4,43 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Webpage with LivePerson Monitor</title>
-    <style>
-        /* CSS for styling the page */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .chatbot-main {
-            position: relative;
-            z-index: 999;
-        }
-
-        .icon {
-            position: absolute;
-            bottom: 0px;
-            right: 20px;
-            cursor: pointer;
-        }
-
-        .chat-icon {
-            width: 50px;
-            height: 50px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="chatbot-main">
-        <!-- Contents of this div have been excluded as per your request -->
-    </div>
-
     <!-- BEGIN LivePerson Monitor. -->
     <script type="text/javascript">
         window.lpTag = window.lpTag || {},
@@ -118,8 +81,46 @@
         }, lpTag.init()) : window.lpTag._tagCount += 1;
     </script>
     <!-- END LivePerson Monitor. -->
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-    <script>
+        .chatbot-main {
+            position: relative;
+            z-index: 999;
+        }
+
+        .icon {
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .chat-icon {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chatbot-main">
+        <!-- Contents of this div have been excluded as per your request -->
+    </div>
+
+    
+
+ <!--   <script>
         // JavaScript for interactivity (if needed)
         document.querySelectorAll('[data-LP-event="click"]').forEach(function(element) {
             element.addEventListener('click', function() {
@@ -133,6 +134,7 @@
                 console.log('Chatbot icon clicked. lpTag.newPage triggered.');
             });
         });
-    </script>
+    </script> -->
+    console.log('after everything');
 </body>
 </html>
